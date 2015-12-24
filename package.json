@@ -1,18 +1,24 @@
 {
-  "name": "orgnic_hash",
-  "version": "1.0.0",
-  "description": "A javascript version of josephcc organic hash",
+  "name": "organic_hash",
+  "title": "organic_hash",
+  "version": "1.0.1",
+  "description": "Converts strings to awesome scifi objects!! A port of the Josephcc ruby gem of the same name",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nhahn/organic_hash"
+  },
+  "homepage": "https://github.com/nhahn/organic_hash",
   "keywords": [
     "hash",
-    "nlp"
+    "crypto"
   ],
   "author": "Nathan Hahn",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
-    "crypto-js": "^3.1.5",
+    "crypto-js": "^3.1.5"
   }
 }

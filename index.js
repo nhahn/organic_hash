@@ -1,9 +1,10 @@
 var SHA256 = require("crypto-js/sha256");
 var fs = require("fs");
+var path = require("path");
 
-var NOUN = fs.readFileSync('data/noun.dat').toString().split('\n');
-var ADJ = fs.readFileSync('data/adj.dat').toString().split('\n');
-var ADV = fs.readFileSync('data/adv.dat').toString().split('\n');
+var NOUN = fs.readFileSync(path.join(__dirname, 'data', 'noun.dat')).toString().split('\n');
+var ADJ = fs.readFileSync(path.join(__dirname, 'data', 'adj.dat')).toString().split('\n');
+var ADV = fs.readFileSync(path.join(__dirname, 'data', 'adv.dat')).toString().split('\n');
 
 // Adds two arrays for the given base (10 or 16), returning the result.
 // This turns out to be the only "primitive" operation we need.
